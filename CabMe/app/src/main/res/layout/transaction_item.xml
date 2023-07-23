@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/grey_200">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payout to Driver Angatia"
+        android:textColor="@color/black"
+        android:id="@+id/txtStatement"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kes. 120"
+        android:textColor="@color/black"
+        android:layout_marginVertical="4dp"
+        android:id="@+id/txtAmount"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="30 May 2021"
+        android:textColor="@color/black"
+        android:id="@+id/txtDate"/>
+
+</LinearLayout>

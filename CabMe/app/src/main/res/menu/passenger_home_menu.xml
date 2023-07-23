@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Filter"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="always"
+        android:id="@+id/menuFilter"/>
+    <item
+        android:title="More"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:title="My Wallet"
+                android:id="@+id/meuWallet"/>
+            <item
+                android:title="My ride"
+                android:id="@+id/menuRide"/>
+            <item
+                android:title="Profile"
+                android:id="@+id/menuProfile"/>
+            <item
+                android:title="Sign Out"
+                android:id="@+id/menuSignOut"/>
+        </menu>
+    </item>
+</menu>

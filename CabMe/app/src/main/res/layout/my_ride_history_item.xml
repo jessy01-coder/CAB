@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp">
+    <TextView
+        android:id="@+id/txtDate"
+        android:text="24 May 2021"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtDescription"/>
+    <TextView
+        android:id="@+id/txtDescription"
+        android:text="From Lavington to Westlands"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:padding="8dp"
+        app:layout_constraintStart_toEndOf="@id/txtDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txtDuration"/>
+    <TextView
+        android:id="@+id/txtDuration"
+        android:text="1100-1300 hrs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/txtDescription"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txtAmount"/>
+    <TextView
+        android:id="@+id/txtAmount"
+        android:text="150"
+        android:textAllCaps="false"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintStart_toEndOf="@id/txtDuration"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription"
+        android:background="@color/grey_400"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
